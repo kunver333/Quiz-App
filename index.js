@@ -53,7 +53,12 @@ const loadQuestion = () => {
 loadQuestion();
 
 const getAnswer = () => {
-  let;
+  let answer;
+  answers.forEach((currentAns) => {
+    if (currentAns.checked) {
+      answer = currentAns.id;
+    }
+  });
 };
 submit.addEventListener("click", () => {
   const checkedAnswer = getAnswer();
